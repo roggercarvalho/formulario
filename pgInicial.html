@@ -1,69 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inicial</title>
     <style>
-        *{
+        * {
             box-sizing: border-box;
         }
-        body{margin: 0;}
-        .topo{
-            background-color: rgb(43, 97, 198);
-            padding: 5px;
-            text-align: center;
+
+        body {
+            margin: 0;
+            overflow-y: hidden;
         }
 
-        .menu{
+        .topo {
+            background-color: rgb(255, 255, 255);
+            padding: 1px;
+            text-align: start;
+        }
+
+        .menu {
             background-color: rgb(21, 196, 223);
             padding: 5px;
-            overflow: hidden;
         }
 
-        .espaco{
-            background-color: rgb(255, 255, 255);
-            padding: 10px;
-        }
-        .coluna1{
+        .coluna1 {
+
             float: left;
             width: 50%;
-            padding: 15px;
+            padding: 100px;
         }
 
+        .botao {
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            color: rgb(255, 255, 255);
+            background-color: #0056b3;
+            transition: transform 0.5s ease;
+        }
 
+        .botao:hover {
+            background-color: #034a96;
+            color: rgb(255, 255, 255);
+            transform: scale(1.2);
+        }
+
+        body {
+            background-color: rgb(21, 196, 223)
+        }
+
+        h2 {
+            color: #ffffff;
+            width: 300px;
+        }
+
+        hr {
+            margin-top: 45px;
+        }
     </style>
 </head>
+
 <body>
     <div class="topo">
-    <h1>Pagina inicial</h1>
-    <p></p>
+        <br>
+        <img src="img/logo.png" width="200">
     </div>
 
-    <div class="menu">
-        <a href="index.html">Link para o formulario</a>
-    </div>
-
-    <div class="espaco">
-
-
+    <div class="coluna1" <h2>Essas aqui é a pagina inicial do formulario clique no botao para
+        começar o formulario.</h2>
+        <br>
+        <hr>
+        <div>
+            <a href="inscricao.ht">
+                <button class="botao">Formulario</button>
+            </a>
+        </div>
     </div>
 
     <div class="coluna1">
-       
-        <h2>Essa aqui é a pagina inicial do formulario <br> onde aqui vai
-            ter todas as informações para <br> iniciar o simulado.
-           <hr>
-            <button><a href="index.html">Formulario</a></button>
-        </h2>
+        <img src="img/centro.png" width="500">
     </div>
 
-        <div class="coluna1">
-           <img src="c:\Users\raybn\Downloads\logo_da_the_vision-removebg-preview.png" width="400">
-        </div>
-        
-
-        
-    
 </body>
+
 </html>

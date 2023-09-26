@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #15c4df;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      /* Ajusta a altura para preencher a tela inteira */
+    }
+
+    #form {
+      background-color: #fff;
+      width: 320px;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 5px;
+      text-align: left;
+    }
+
+    input,
+    select {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    input[type="submit"] {
+      background-color: #15c4df;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0da7be;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>UNINASSAU</h1>
+  </header>
+  <main>
+    <form action="./teste-basico.html" id="form">
+      <h2>Inscrição para teste</h2>
+
+      <label for="nome">Digite seu nome:</label>
+      <input type="text" name="nome" id="nome" required />
+
+      <label for="nome">Digite seu email:</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="nome">Digite sua matricula:</label>
+      <input type="number" name="matricula" id="matricula" />
+
+      <label for="nome">Digite seu curso:</label>
+      <select id="curso">
+        <option>selecione o curso</option>
+        <option value="Administração">Administração</option>
+        <option value="Ciências da Computação">Ciências da Computação</option>
+        <option value="Engenharia Civil">Engenharia Civil</option>
+        <option value="Medicina">Medicina</option>
+        <option value="Psicologia">Psicologia</option>
+        <option value="Direito">Direito</option>
+        <option value="Economia">Economia</option>
+        <option value="Enfermagem">Enfermagem</option>
+        <option value="Física">Física</option>
+        <option value="Design Gráfico">Design Gráfico</option>
+      </select>
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </main>
+</body>
+
+</html>
